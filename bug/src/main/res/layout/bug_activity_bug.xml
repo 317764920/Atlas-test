@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cqxiaokang.bug.BugActivity">
+
+    <TextView
+        android:id="@+id/tv_bug_fix"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="我是一个bug，点我进行修复" />
+
+    <Button
+        android:id="@+id/btn_bug_go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="点我加载远程模块" />
+
+</LinearLayout>

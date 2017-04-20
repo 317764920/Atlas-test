@@ -1,0 +1,6 @@
+taskkill /F /IM java.exe
+..\gradlew clean assembleDebug publish
+..\gradlew clean assembleDebug -DapVersion=1.0.1 -DversionName=1.0.2
+adb push build/outputs/tpatch-debug/update.json /sdcard/Android/data/com.cqxiaokang.atlas.test/cache/update.json
+adb push build/outputs/tpatch-debug/patch-1.0.2@1.0.1.tpatch /sdcard/Android/data/com.cqxiaokang.atlas.test/cache
+adb push build/outputs/remote-bundles-debug/libcom_cqxiaokang_remote.so /sdcard/Android/data/com.cqxiaokang.atlas.test/cache
