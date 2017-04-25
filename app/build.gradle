@@ -84,7 +84,7 @@ atlas {
 }
 
 dependencies {
-    compile('com.taobao.android:atlas_core:5.0.6-rc33@aar') {
+    compile('com.taobao.android:atlas_core:5.0.6-rc46@aar') {
         transitive = true
     }
     //butterknife
